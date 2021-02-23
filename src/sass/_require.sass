@@ -1,0 +1,39 @@
+.require
+  padding-top: 68px
+  padding-bottom: 22px
+  &-block
+    margin-top: 24px
+    margin-bottom: 62px
+    margin-right: 104px
+  &-title
+    color: $blue-light
+    font-size: 22px
+    font-weight: 500
+    &_red
+      color: $red-light
+  &-list
+    font-size: 17px
+    list-style: none
+    padding-left: 50px
+    margin-top: 10px
+    li
+      position: relative
+      line-height: 24px
+      margin-bottom: 10px
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -31px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url(../src/img/require_list_blue.png) center no-repeat
+    &_red
+      li
+        &::before
+          background: url(../src/img/require_list_red.png)
+
+  &-text
+    color: $blue-light
+    font-size: 17px
